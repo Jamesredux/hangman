@@ -1,0 +1,21 @@
+--- !ruby/object:Game
+word: sales
+word_array:
+- s
+- a
+- l
+- e
+- s
+guess_count: 3
+progress:
+- "-"
+- a
+- "-"
+- "-"
+- "-"
+past_letters:
+- n
+- a
+- v
+game_over: false
+guess: 

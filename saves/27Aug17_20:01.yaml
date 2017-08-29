@@ -1,0 +1,24 @@
+--- !ruby/object:Game
+word: clinic
+word_array:
+- c
+- l
+- i
+- n
+- i
+- c
+guess_count: 4
+progress:
+- c
+- "-"
+- i
+- "-"
+- i
+- c
+past_letters:
+- c
+- o
+- a
+- i
+game_over: false
+guess: 

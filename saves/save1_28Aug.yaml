@@ -1,0 +1,29 @@
+--- !ruby/object:Game
+word: ourselves
+word_array:
+- o
+- u
+- r
+- s
+- e
+- l
+- v
+- e
+- s
+guess_count: 3
+progress:
+- "-"
+- "-"
+- "-"
+- "-"
+- e
+- "-"
+- v
+- e
+- "-"
+past_letters:
+- e
+- a
+- v
+game_over: false
+guess: 

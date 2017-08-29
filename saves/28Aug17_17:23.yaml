@@ -1,0 +1,23 @@
+--- !ruby/object:Game
+word: hardly
+word_array:
+- h
+- a
+- r
+- d
+- l
+- y
+guess_count: 3
+progress:
+- "-"
+- a
+- "-"
+- "-"
+- "-"
+- "-"
+past_letters:
+- a
+- b
+- c
+game_over: false
+guess: 

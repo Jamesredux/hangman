@@ -1,0 +1,24 @@
+--- !ruby/object:Game
+word: divide
+word_array:
+- d
+- i
+- v
+- i
+- d
+- e
+guess_count: 3
+progress:
+- d
+- "-"
+- "-"
+- "-"
+- d
+- e
+past_letters:
+- e
+- s
+- d
+game_over: false
+guess: 
+
