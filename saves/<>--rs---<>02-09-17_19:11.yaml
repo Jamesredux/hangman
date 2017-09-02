@@ -1,23 +1,24 @@
 --- !ruby/object:Game
-word: remote
+word: herself
 word_array:
+- h
+- e
 - r
-- e
-- m
-- o
-- t
-- e
-guess_count: 3
-progress:
-- r
-- e
-- "-"
-- "-"
-- "-"
-- e
-past_letters:
+- s
 - e
 - l
+- f
+guess_count: 2
+progress:
+- "-"
+- "-"
 - r
+- s
+- "-"
+- "-"
+- "-"
+past_letters:
+- r
+- s
 game_over: false
 guess: 

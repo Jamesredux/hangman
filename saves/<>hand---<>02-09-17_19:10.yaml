@@ -1,23 +1,27 @@
 --- !ruby/object:Game
-word: carrier
+word: handful
 word_array:
-- c
+- h
 - a
-- r
-- r
-- i
-- e
-- r
-guess_count: 1
+- n
+- d
+- f
+- u
+- l
+guess_count: 5
 progress:
-- "-"
-- "-"
-- "-"
-- "-"
+- h
+- a
+- n
+- d
 - "-"
 - "-"
 - "-"
 past_letters:
 - h
+- e
+- a
+- n
+- d
 game_over: false
 guess: 

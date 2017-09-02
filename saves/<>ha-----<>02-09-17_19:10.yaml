@@ -1,32 +1,25 @@
 --- !ruby/object:Game
-word: electronic
+word: handful
 word_array:
-- e
+- h
+- a
+- n
+- d
+- f
+- u
 - l
-- e
-- c
-- t
-- r
-- o
-- n
-- i
-- c
-guess_count: 4
+guess_count: 3
 progress:
-- e
+- h
+- a
 - "-"
-- e
 - "-"
-- t
-- r
 - "-"
-- n
 - "-"
 - "-"
 past_letters:
-- r
+- h
 - e
-- n
-- t
+- a
 game_over: false
 guess: 

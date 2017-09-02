@@ -1,7 +1,6 @@
 #hangman game from odin project file i/o and serialization project.
 
 require "yaml"
-require "./saveload.rb"
 
 class Game
 
@@ -16,13 +15,9 @@ class Game
 		@game_over = false
 		set_up_display
 			
-
 	end
 
-
 		
-	
-
 	def get_word
 		words = File.readlines("dict3000.txt")   #there are 2 dics the one suggested has a lot of wierd words so i just used the 3000 most common english words
 		word = words.select { |w| w.size > 4 && w.size <  13 }.sample
@@ -71,11 +66,18 @@ class Game
 		puts ""	 		
 	end
 
+
+	def check_count
+		if @guess_count > 10
+			end_game
+		end	
+	end
+
 	def get_guess
 	 choice = gets.downcase.chomp
 	 	case choice
 	 	when "save"
-	 		save_game #method to save game, this could be outside class so I will have to watch this
+	 		save_game 
 	 		#also need something for what to do after saved, exit or continue 
 	 	when "solve"	
 
@@ -96,24 +98,33 @@ class Game
 	 	end
 	end	
 
-	def check_count
-		if @guess_count > 10
-			end_game
-		end	
-		
-	end
 
 	def end_game
-		puts "Too bad, you died, the word was: \"#{@word}\""
+		puts "Too bad, you were hanged, the word was: \"#{@word}\""
 		@game_over = true
 
 	end
 
 	def win_game
-		puts "Congratulations you correctly guessed the word."
+		puts "Congratulations you correctly guessed \"#{@word}\""
 		@game_over = true
 		
 	end
+
+	def save_game
+		prog_string = @progress.join
+		
+		saved_data = YAML::dump(self)
+
+		Dir.mkdir("saves") unless Dir.exists?("saves")
+
+		puts "saving game.."
+		filename = "saves/<>#{prog_string}<>#{Time.now.strftime('%d-%m-%y_%H:%M')}.yaml"  
+		File.open(filename, "w") do |file|
+			file.puts YAML::dump(self)
+
+		end 
+		end 
 
 	def solve_try
 		
@@ -127,10 +138,10 @@ class Game
 	def check_guess(user_guess)
 		guess_array = user_guess.chars
 		if guess_array == @word_array
-			puts "That is right"
+			puts "That is right!"
 			win_game
 		else
-			puts "That is wrong"
+			puts "Sorry that's not the word."
 
 			
 			play_game
