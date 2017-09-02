@@ -1,24 +1,23 @@
 --- !ruby/object:Game
-word: clinic
+word: remote
 word_array:
-- c
-- l
-- i
-- n
-- i
-- c
-guess_count: 4
-progress:
-- c
-- "-"
-- i
-- "-"
-- i
-- c
-past_letters:
-- c
+- r
+- e
+- m
 - o
-- a
-- i
+- t
+- e
+guess_count: 3
+progress:
+- r
+- e
+- "-"
+- "-"
+- "-"
+- e
+past_letters:
+- e
+- l
+- r
 game_over: false
 guess: 

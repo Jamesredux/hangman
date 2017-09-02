@@ -1,29 +1,23 @@
 --- !ruby/object:Game
-word: ourselves
+word: carrier
 word_array:
-- o
-- u
+- c
+- a
 - r
-- s
+- r
+- i
 - e
-- l
-- v
-- e
-- s
-guess_count: 3
+- r
+guess_count: 1
 progress:
 - "-"
 - "-"
 - "-"
 - "-"
-- e
 - "-"
-- v
-- e
+- "-"
 - "-"
 past_letters:
-- e
-- a
-- v
+- h
 game_over: false
 guess: 

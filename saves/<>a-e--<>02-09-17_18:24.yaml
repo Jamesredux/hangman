@@ -1,23 +1,22 @@
 --- !ruby/object:Game
-word: hardly
+word: agent
 word_array:
-- h
 - a
-- r
-- d
-- l
-- y
-guess_count: 3
+- g
+- e
+- n
+- t
+guess_count: 4
 progress:
-- "-"
 - a
 - "-"
-- "-"
+- e
 - "-"
 - "-"
 past_letters:
+- e
+- p
 - a
-- b
-- c
+- l
 game_over: false
 guess: 

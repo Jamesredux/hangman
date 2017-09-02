@@ -1,0 +1,38 @@
+--- !ruby/object:Game
+word: electronic
+word_array:
+- e
+- l
+- e
+- c
+- t
+- r
+- o
+- n
+- i
+- c
+guess_count: 10
+progress:
+- e
+- l
+- e
+- c
+- t
+- r
+- o
+- n
+- "-"
+- c
+past_letters:
+- r
+- e
+- n
+- t
+- m
+- s
+- p
+- o
+- l
+- c
+game_over: false
+guess: 

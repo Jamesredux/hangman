@@ -1,19 +1,32 @@
 --- !ruby/object:Game
-word: sales
+word: electronic
 word_array:
-- s
-- a
+- e
 - l
 - e
-- s
-guess_count: 1
+- c
+- t
+- r
+- o
+- n
+- i
+- c
+guess_count: 4
 progress:
+- e
 - "-"
+- e
 - "-"
+- t
+- r
 - "-"
+- n
 - "-"
 - "-"
 past_letters:
+- r
+- e
 - n
+- t
 game_over: false
 guess: 

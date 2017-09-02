@@ -1,0 +1,33 @@
+--- !ruby/object:Game
+word: regulation
+word_array:
+- r
+- e
+- g
+- u
+- l
+- a
+- t
+- i
+- o
+- n
+guess_count: 5
+progress:
+- r
+- e
+- "-"
+- "-"
+- "-"
+- "-"
+- t
+- "-"
+- "-"
+- "-"
+past_letters:
+- r
+- e
+- t
+- s
+- m
+game_over: false
+guess: 

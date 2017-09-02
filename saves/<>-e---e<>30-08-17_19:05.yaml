@@ -1,24 +1,21 @@
 --- !ruby/object:Game
-word: divide
+word: remote
 word_array:
-- d
-- i
-- v
-- i
-- d
+- r
 - e
-guess_count: 3
+- m
+- o
+- t
+- e
+guess_count: 1
 progress:
-- d
+- "-"
+- e
 - "-"
 - "-"
 - "-"
-- d
 - e
 past_letters:
 - e
-- s
-- d
 game_over: false
 guess: 
-

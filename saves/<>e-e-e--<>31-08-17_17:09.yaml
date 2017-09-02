@@ -1,0 +1,23 @@
+--- !ruby/object:Game
+word: element
+word_array:
+- e
+- l
+- e
+- m
+- e
+- n
+- t
+guess_count: 1
+progress:
+- e
+- "-"
+- e
+- "-"
+- e
+- "-"
+- "-"
+past_letters:
+- e
+game_over: false
+guess: 

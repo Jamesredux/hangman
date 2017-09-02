@@ -1,19 +1,20 @@
 --- !ruby/object:Game
-word: elite
+word: right
 word_array:
-- e
-- l
+- r
 - i
+- g
+- h
 - t
-- e
-guess_count: 1
+guess_count: 2
 progress:
-- e
+- r
 - "-"
 - "-"
 - "-"
-- e
+- "-"
 past_letters:
 - e
+- r
 game_over: false
 guess: 
