@@ -1,4 +1,4 @@
-#hangman game from odin project file i/o and serialization project.
+#game.rb is were the playing of the game goes on and also the saving.
 
 require "yaml"
 
@@ -19,7 +19,7 @@ class Game
 
 		
 	def get_word
-		words = File.readlines("dict3000.txt")   #there are 2 dics the one suggested has a lot of wierd words so i just used the 3000 most common english words
+		words = File.readlines("./data/dict3000.txt")   #there are 2 dics the one suggested has a lot of wierd words so i just used the 3000 most common english words
 		word = words.select { |w| w.size > 4 && w.size <  13 }.sample
 		word = word.downcase.chomp
 	end	
@@ -40,7 +40,6 @@ class Game
 		end
 	end
 
-
 	def check_and_print(word_array, guess='$')
 		puts "checking........"
 		x = 0
@@ -52,7 +51,6 @@ class Game
 					x += 1
 				
 				end
-
 		end
 
 		puts @progress.join
@@ -78,7 +76,6 @@ class Game
 	 	case choice
 	 	when "save"
 	 		save_game 
-	 		#also need something for what to do after saved, exit or continue 
 	 	when "solve"	
 
 	 		solve_try
@@ -98,19 +95,6 @@ class Game
 	 	end
 	end	
 
-
-	def end_game
-		puts "Too bad, you were hanged, the word was: \"#{@word}\""
-		@game_over = true
-
-	end
-
-	def win_game
-		puts "Congratulations you correctly guessed \"#{@word}\""
-		@game_over = true
-		
-	end
-
 	def save_game
 		prog_string = @progress.join
 		
@@ -124,18 +108,35 @@ class Game
 			file.puts YAML::dump(self)
 
 		end 
-		end 
+		puts "Game Saved. Please continue:"
+
+	end
+
+
+	def end_game
+		puts "Too bad, you were hanged, the word was: \"#{@word}\""
+		@game_over = true
+
+	end
+
+	def win_game
+		puts "Congratulations you correctly guessed \"#{@word}\""
+		@game_over = true
+		
+	end
+
+	 
 
 	def solve_try
 		
 		puts "Please input your guess"
 		user_guess = gets.chomp.downcase
-		check_guess(user_guess)
+		check_solve(user_guess)
 		
 
 	end
 
-	def check_guess(user_guess)
+	def check_solve(user_guess)
 		guess_array = user_guess.chars
 		if guess_array == @word_array
 			puts "That is right!"
@@ -147,8 +148,6 @@ class Game
 			play_game
 		end	
 	end	
-
-	
 
 
 end
