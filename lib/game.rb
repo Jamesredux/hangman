@@ -25,7 +25,7 @@ class Game
 	end	
 
 	def set_up_display
-		puts  "Welcome to hangman - here is the word you have to guess.."
+		puts  "Welcome to hangman - you have 11 guesses. Here is the word you have to guess.."
 		puts ""
 		puts @progress.join
 		puts ""
