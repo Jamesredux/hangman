@@ -2,6 +2,8 @@
 
 require "yaml"
 
+
+
 class Game
 
 	attr_accessor :progress, :guess_count

@@ -1,9 +1,15 @@
 #this is where the game will be run from
 #game workings are in main.rb
 
+require 'sinatra'
+require "sinatra/reloader" if development?
+
 require "./lib/game.rb"
 require "./lib/load.rb"
 
+get '/' do 
+	"HANGMAN"
+end	
 
 
 class Hangman
@@ -35,6 +41,6 @@ class Hangman
 	
 end
 
-trevor = Hangman.new
+#trevor = Hangman.new
 
 #it's new_game that has to be saved, not trevor
